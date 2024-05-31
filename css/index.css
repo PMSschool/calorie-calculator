@@ -1,0 +1,244 @@
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header.dar-cy{
+    transition: 1s;
+    background-color: darkcyan;
+    .logo{
+      h1{
+        color: white;
+        transition: 1s;
+      }
+    }
+    .links{
+      .icon{
+        span{
+          background-color: white;
+          transition: 1s;
+        }
+      }
+    }
+}
+.header{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 999999999999999999;
+  position: absolute;
+  width: 100%;
+  .logo{
+    h1{
+      font-size: 26px;
+      color: darkcyan;
+      span{
+        color: goldenrod;
+      }
+    }
+  }
+  .links{
+    .icon{
+      display: none;
+    }
+    nav{
+      ul{
+        display: flex;
+        list-style: none;
+        gap: 25px;
+        margin: 0;
+        padding: 0;
+        li{
+          
+          a{
+            text-decoration: none;
+            font-weight: bold;
+            color: goldenrod;
+            transition: 0.3s;
+            &:hover{
+            color:darkcyan;
+          }
+          }
+          
+        }
+      }
+    }
+  }
+  @media (max-width:767px){
+     .logo{
+      h1{
+        font-size: 23px;
+      }
+     }
+     .links{
+      .icon{
+        display: flex;
+        position: relative;
+        width: 25px;
+        height: 15px;
+        
+        span{
+          transition: 0.3s;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background-color: goldenrod;
+          right: 0;
+        }
+        span.one{top: 0;}
+        span.two{top: 50%;}
+        span.three{top: 100%;}
+      }
+      .icon.close{
+        span.one{top: 7px; transform: rotateZ(45deg);}
+        span.two{display: none;}
+        span.three{top: 7px; transform: rotateZ(135deg);}
+        /* span.two{width: 80%; }
+        span.three{width: 60%; transition-delay: 0.1s;} */
+      }
+      nav{
+        ul{
+          position: absolute;
+          top: -300%;
+          background-color: darkcyan;
+          left: 0;
+          width: 100%;
+          flex-direction: column;
+          gap: 0;
+          transition: 0.5s;
+          z-index: -1;
+          li{
+            padding: 10px;
+            a{
+              color:white;
+            }
+            a:hover{
+              background-color: aquamarine;
+              color: darkcyan;
+            }
+          }
+        }
+        ul.open{
+          top:102%;
+        }
+      }
+     }
+  }
+}
+
+
+/* .stopwatchApp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 50px;
+  margin-top: 45px;
+  .bodysw{
+    text-align: center;
+    .timeDisplay{
+      font-size: 26px;
+    }
+    .buttonWrapper{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 10px;
+      button{
+        border-radius: 50%;
+        padding: 6px;
+        width: 35px;
+        height: 35px;
+        border: none;
+        outline: none;
+      }
+      button.red{
+        background-color: rgb(148 0 0 / 61%) !important;
+        color: white !important;
+      }
+      button.lapStopwatch{
+        background-color: rgb(19 42 131 / 86%);
+        color: white;
+      }
+      button.startStopwatch{
+        background-color: rgb(31 131 56 / 61%);
+        color: white;
+      }
+    }
+  }
+}
+ */
+
+.landing{
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  padding: 50px;
+  .lelan{
+    .text{
+      line-height: 30px;
+      width: 80%;
+      padding-left: 60px;
+      h2{
+        color: goldenrod;
+      }
+      p{
+        color: #93be78;
+      }
+      button{
+        border: none;
+        padding: 10px;
+        border-radius: 11px;
+        background-color: gold;
+        font-weight: bold;
+        cursor: pointer;
+        a{
+          color: white;
+        }
+      }
+    }
+    
+  }
+  .image{
+      img{
+        width: 400px;
+      }
+    }
+  
+  span.cyrcle{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 11px;
+    border-color: darkcyan transparent;  
+  }
+
+}
+@media(max-width:767px){
+  .landing{
+    flex-direction: column;
+    padding-top: 135px;
+    .lelan{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      .text{
+        padding-left: 0;
+        h2{
+          font-size: 28px;
+        }
+      }
+    }
+    .image{
+      img{
+        width: 243px;
+      }
+    }
+    span.cyrcle{
+      display:  none;
+    }
+  }
+}

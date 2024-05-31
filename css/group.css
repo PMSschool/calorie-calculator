@@ -1,0 +1,42 @@
+.content{
+  position: absolute;
+  top: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 50px;
+  text-align: center;
+  width: 70%;
+  .doc{
+    background-color: darkcyan;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 100%;
+    h4{
+      color: white;
+    }
+  }
+  .stu{
+    background-color: #eee;
+    border-radius: 10px;
+    width: 100%;
+    h4{
+      padding: 10px 20px;
+      color: darkcyan;
+    }
+    hr{
+      width: 80%;
+    }
+  }
+
+}
+@media (max-width:767px) {
+  .content{
+    width: 90%;
+  }
+  h4{
+    font-size: 16px;
+  }
+}

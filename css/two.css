@@ -1,0 +1,108 @@
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #eee;
+}
+
+.header{
+  .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd8a4;
+    color: white;
+    img{
+      width: 70px;
+    }
+    h1{
+      font-size: 25px;
+    }
+  }
+}
+
+.content{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1.head{
+      width: 100%;
+      text-align: center;
+      background-color: white;
+      margin: 0;
+      padding: 45px;
+      color: lightcoral;
+    }
+    .container{
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      .box{
+        background-color: white;
+        border-radius: 7px;
+        padding: 25px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h2{
+          font-size: 22px;
+          text-align: center;
+          position: relative;
+          width: fit-content;
+          margin: auto auto 45px auto;
+          color: cornflowerblue;
+          &::before{
+            content: "";
+            width: 120%;
+            position: absolute;
+            height: 1px;
+            background-color: #c3c3c3;
+            bottom: -15px;
+            left: -20px;
+          }
+          &::after{
+            content: "";
+            position: absolute;
+            border-style: solid;
+            border-color: #c3c3c3;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border-width: 1px;
+            left: 50%;
+            bottom: -19px;
+            background-color: white;
+          }
+        }
+        .te{
+          display: flex;
+          justify-content: right;
+          h3{
+            font-size: 17px;
+            width: fit-content;
+            background-color: #eee;
+            padding: 10px 30px 10px 20px;
+            border-radius: 7px;
+            color: indianred;
+            position: relative;
+            &::before{
+              content: "";
+              position: absolute;
+              width: 3px;
+              height: 70%;
+              background-color: cornflowerblue;
+              right: 10px;
+              top: 7px;
+              border-radius: 10px;
+            }
+          }
+        }
+        embed{
+          width: 100%;
+          height: 260px;
+          border-radius: 8px;
+        }
+      }
+    }
+}

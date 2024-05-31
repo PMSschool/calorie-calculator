@@ -1,0 +1,97 @@
+.calc{
+  background-color: #eee;
+  top: 140px;
+  position: absolute;
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 90%;
+  h2{
+    font-size: 20px;
+  }
+  .le-calc{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+  }
+  .form-calc{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .in{
+      display: flex;
+      flex-direction: column;
+      .checkbox{
+        label{
+          color: black;
+        }
+      }
+      label{
+        color: darkcyan;
+      }
+      input{
+        border: none;
+        border-radius: 6px;
+        padding: 5px;
+        outline: none;
+      }
+      select{
+        border: none;
+        border-radius: 6px;
+        padding: 5px;
+        outline: none;
+      }
+    }
+    .buttons{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 18px;
+      button{
+        border: none;
+        background-color: gold;
+        padding: 7px 14px;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+    
+  }
+  img{
+      filter: hue-rotate(-70deg);
+      width: 345px;
+    }
+}
+
+@media (max-width:767px) {
+  .calc{
+    flex-direction: column;
+    button{
+      font-size: 14px;
+    }
+    img{
+      width: 200px;
+    }
+  }
+}
+
+.footer{
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  background-color: darkcyan;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}

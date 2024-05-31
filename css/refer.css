@@ -1,0 +1,22 @@
+.content{
+  position: absolute;
+  top: 150px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  .head{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 15px;
+    h4:last-child{
+      background-color: #eee;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    h4{
+      font-size: 20px;
+    }
+  }
+}
